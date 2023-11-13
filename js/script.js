@@ -20,7 +20,7 @@ const llenadotabla = (result)=>{
     }
 }
 
-// Filtrado 
+// Filtrado para buscar un libro por título
 function buscarLibro() {
     const input = document.getElementById('search');
     const filter = input.value.toUpperCase();
@@ -51,7 +51,7 @@ function limpiarFiltro() {
     }
 }
 
-//
+//Evento para acomodar de forma ascendente y descendente todas las columnas de la tabla
 document.addEventListener('DOMContentLoaded', function () {
     const table = document.getElementById('tablaLibros');
     const headers = table.querySelectorAll('th');
