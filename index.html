@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería</title>
+</head>
+<body>
+    <h1>Librería Siglo XXI</h1>
+    <h2>Listado de libros</h2>
+
+    <div id="search-container">
+        <div class="search-box">
+            <label for="search">Buscar por título:</label>
+            <input type="text" id="search" placeholder="Ingresa el título que buscas...">
+            <button onclick="buscarLibro()">Buscar</button>
+            <button onclick="limpiarFiltro()">Deshacer</button>
+        </div>
+    </div>
+
+
+    <table id = "tablaLibros" class="table">
+        <thead>
+            <tr>
+                <th data-column="0" data-order="asc">Title <span class="arrow">&#8593;</span></th>
+                <th data-column="1" data-order="asc">Author <span class="arrow">&#8593;</span></th>
+                <th data-column="2" >Chapters <span class="arrow">&#8593;</span></th>
+                <th data-column="3" >Pages <span class="arrow">&#8593;</span></th>
+                <th data-column="4" >Price <span class="arrow">&#8593;</span></th>
+            </tr>
+        </thead>        
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</body>
+</html>
